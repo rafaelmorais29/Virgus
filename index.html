@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d3a6b">
+<title>Virgus — Aparições marianas ao longo da história</title>
+<meta name="description" content="Virgus: um acervo contemplativo e criterioso das aparições marianas, com fatos, relatos, devoções e o discernimento da Igreja.">
+<meta property="og:title" content="Virgus — Aparições marianas">
+<meta property="og:description" content="Guadalupe, Lourdes, Fátima e outras aparições, com fontes e distinção entre fato, relato e reconhecimento eclesial.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#acervo">Ir para o acervo</a>
+<div class="hdr"><div class="wrap"><header class="top"><a class="logo" href="#" id="home">Virgus</a><nav aria-label="Principal"><a href="#destaques">Destaques</a><a href="#linha">Linha do tempo</a><a href="#acervo">Acervo</a><a href="#sobre">Sobre</a><button id="th" class="tgl" type="button" aria-label="Alternar tema claro e escuro">◐</button></nav></header></div></div>
+<main id="main">
+<div id="list">
+<div class="hero"><div class="wrap hgrid"><div class="htxt"><p class="eyebrow">Aparições marianas ao longo da história</p><h1>Virgus</h1><p class="lead">Com reverência, caminhamos pelos lugares onde a Mãe se fez próxima.</p><p><a class="btn" href="#acervo">Explorar as aparições</a><a class="btn alt" href="#linha">Ver a linha do tempo</a></p></div><figure class="arch"><span id="hpic"></span></figure></div></div>
+<div class="wrap">
+<section id="destaques"><h2>Em destaque</h2><p class="sub">Três lugares de peregrinação conhecidos em todo o mundo.</p><div class="feat" id="feat"></div></section>
+<section id="linha"><h2>Linha do tempo</h2><p class="sub">Da antiga tradição de Saragoça, por volta do ano 40, a 1983, em ordem cronológica.</p><ol class="tl" id="tl" aria-label="Aparições em ordem cronológica"></ol></section>
+<section id="acervo"><h2>Acervo</h2><p class="sub">Busque por nome, lugar, época ou palavra-chave.</p>
+<div class="tools" role="search">
+<div class="s"><label for="q">Busca</label><input id="q" type="search" placeholder="Ex.: Lourdes, 1917, rosário, Japão"></div>
+<div><label for="fp">Período</label><select id="fp"></select></div>
+<div><label for="fc">País</label><select id="fc"></select></div>
+<div><label for="fr">Reconhecimento</label><select id="fr"></select></div>
+<button class="btn alt" id="clr" type="button">Limpar</button></div>
+<p id="cnt" class="sub" aria-live="polite"></p>
+<div class="grid" id="grid"></div><div id="empty" class="empty" hidden><p><strong>Nenhuma aparição encontrada.</strong></p><p>Tente outro termo ou remova algum filtro.</p><button class="btn alt" id="clr2" type="button">Limpar filtros</button></div></section>
+<section id="sobre"><h2>Sobre este acervo</h2>
+<div class="note"><p>Cada página separa quatro naturezas de informação: <strong>fatos históricos</strong>, <strong>relatos atribuídos aos videntes</strong>, <strong>tradição devocional</strong> e <strong>avaliação da Igreja</strong>. Os tipos de reconhecimento <em>não são equivalentes</em>: um bispo local, a Santa Sé e a inclusão no calendário litúrgico são atos distintos. Em nenhum caso a fé católica obriga a crer em aparições privadas.</p>
+<p>As imagens deste site são ilustrações geradas por IA, sem pretensão de ser a imagem venerada em qualquer santuário nem registro histórico. Este é um primeiro rascunho: os conteúdos e links devem passar por revisão humana.</p></div><div class="leg" aria-label="Legenda das cores dos blocos"><span class="k k1">Fato documentado</span><span class="k k2">Relato atribuído</span><span class="k k3">Tradição devocional</span><span class="k k4">Avaliação da Igreja</span></div></section>
+</div></div>
+<div id="detail" class="wrap detail" tabindex="-1"></div>
+</main>
+<div class="wrap"><footer><p>Virgus. Ad Iesum per Mariam.</p><p>As imagens são ilustrações geradas por IA, fornecidas pelo projeto, sem valor de registro histórico. O conteúdo está sujeito a revisão e confirmação de fontes.</p></footer></div><dialog id="lb" aria-label="Imagem ampliada"><button class="x" id="lbx" type="button" aria-label="Fechar">×</button><img id="lbi" alt=""><p id="lbc" class="credit"></p></dialog>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
